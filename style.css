@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
+}
+
+.header{
+    background-color: #340000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+
+.header-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+
+}
+
+.header-img > img{
+    width: 80%;
+}
+
+.about{
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+/* Work */
+
+.Work{
+    background-color: black;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-container{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 75%;
+    text-align: start;
+}
+
+.works{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 30px;
+   grid-template-rows: auto auto auto;
+
+}
+
+.works-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #340000;
+    
+}
+
+.works-card-image > img{
+    width: 100%;
+}
+
+
+.works-card-body{
+    padding: 30px;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.footer{
+    background-color: #340000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+
+.contact{
+    line-height: 70px;
+}
+
+@media screen and (max-width: 1065px) {
+    
+    .works{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .works{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        grid-template-rows: auto auto auto;
+    }
+
+    .header-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    
+    }
+
+    .about{
+        line-height: 25px;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }    
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+    }
+}
